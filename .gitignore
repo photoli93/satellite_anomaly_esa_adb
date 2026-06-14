@@ -1,11 +1,28 @@
+# Python
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
-.env
+.Python
+env/
+venv/
 .venv/
-
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+# Environment
+.env
+.env.local
+.venv/
+venv/
+# Data
 data/raw/
 data/processed/
+*.csv
+*.parquet
+*.h5
+# Models
 models/checkpoints/
 
+# macOS
 *.webloc
+.DS_Store
