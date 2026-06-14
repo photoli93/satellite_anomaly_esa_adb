@@ -5,6 +5,8 @@ __pycache__/
 env/
 venv/
 .venv/
+# ignore next steps notebook
+notebooks/00_step_summary_next_steps.ipynb
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb_checkpoints
