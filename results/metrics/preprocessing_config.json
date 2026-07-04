@@ -1,0 +1,37 @@
+{
+  "starter_channels": [
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46"
+  ],
+  "window_size": 64,
+  "stride": 1,
+  "label_strategy": "any - window=1 if at least one point is anomalous",
+  "scaler": "StandardScaler fitted on train only",
+  "scaler_path": "../models/baseline/scaler_starter_channels.pkl",
+  "shapes": {
+    "X_train": [
+      14728258,
+      64,
+      6
+    ],
+    "y_train": [
+      14728258
+    ],
+    "X_test": [
+      521217,
+      64,
+      6
+    ]
+  },
+  "window_label_stats": {
+    "n_total": 14728258,
+    "n_normal": 13172392,
+    "n_anomaly": 1555866,
+    "anomaly_ratio": 10.563815489924199,
+    "pos_weight": 8.46627665878681
+  }
+}
