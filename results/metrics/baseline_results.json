@@ -1,0 +1,29 @@
+{
+  "validation_split": 0.2,
+  "split_method": "chronological",
+  "subsample_ratio": 0.05,
+  "subsample_size": 589130,
+  "IsolationForest": {
+    "f1": 0.23654865023967706,
+    "precision": 0.17614072220952404,
+    "recall": 0.3600176629826122,
+    "roc_auc": 0.606441298384502,
+    "train_time": 4.9387922920286655
+  },
+  "RandomForest": {
+    "f1": 0.1689471536460352,
+    "precision": 0.10561891709832524,
+    "recall": 0.42193729641172667,
+    "roc_auc": 0.5180213817550225,
+    "train_time": 38.4203942080494
+  },
+  "best_model": "IsolationForest",
+  "channel_importance": {
+    "channel_41": 0.2510658881451439,
+    "channel_45": 0.19872635087256735,
+    "channel_46": 0.17836766547399024,
+    "channel_44": 0.150905858667433,
+    "channel_43": 0.12090009505968524,
+    "channel_42": 0.10003414178118022
+  }
+}
