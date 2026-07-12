@@ -1,0 +1,43 @@
+{
+  "architecture": "GRU",
+  "bidirectional": true,
+  "seed": 42,
+  "n_features": 6,
+  "hidden_size": 64,
+  "num_layers": 1,
+  "dropout": 0.2,
+  "window_size": 64,
+  "starter_cols": [
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46"
+  ],
+  "best_threshold": 0.6100000000000001,
+  "training": {
+    "n_epochs": 40,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "pos_weight": 8.46627665878681,
+    "patience": 10,
+    "epochs_ran": 20,
+    "best_val_f1": 0.21838084200890118,
+    "best_val_pr_auc": 0.2618518591105634,
+    "subsample_ratio": 0.05
+  },
+  "val_metrics": {
+    "f1": 0.259130873889774,
+    "precision": 0.21195153463483118,
+    "recall": 0.3333280003071823,
+    "roc_auc": 0.6378466352215533
+  },
+  "vs_baseline_iso": {
+    "f1_delta": 0.02258222365009696,
+    "precision_delta": 0.03581081242530715,
+    "recall_delta": -0.02668966267542988,
+    "roc_auc_delta": 0.03140533683705127
+  }
+}
