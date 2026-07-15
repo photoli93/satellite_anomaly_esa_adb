@@ -1,0 +1,21 @@
+{
+  "model_file": "gru_anomaly_detector.onnx",
+  "scaler_file": "scaler_starter_channels.pkl",
+  "starter_cols": [
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46"
+  ],
+  "window_size": 64,
+  "n_features": 6,
+  "best_threshold": 0.6500000000000001,
+  "val_metrics": {
+    "f1": 0.26380868865026447,
+    "precision": 0.2317771047849788,
+    "recall": 0.30611356785849136,
+    "roc_auc": 0.635483877925912
+  }
+}
