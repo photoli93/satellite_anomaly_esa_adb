@@ -44,7 +44,10 @@ def main():
         config = json.load(f)
 
     scaler = joblib.load(args.bundle_dir / config["scaler_file"])
-    session = ort.InferenceSession(str(args.bundle_dir / config["model_file"]), providers=["CPUExecutionProvider"])
+    session_options = ort.SessionOptions()
+    session_options.log_severity_level = 3  # suppress the harmless static-output-shape warning
+    session = ort.InferenceSession(str(args.bundle_dir / config["model_file"]), sess_options=session_options,
+                                    providers=["CPUExecutionProvider"])
     input_name = session.get_inputs()[0].name
 
     print(f"Platform  : {platform.platform()}")
